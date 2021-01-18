@@ -1,0 +1,16 @@
+.column {
+        /* background: #9E9E9E; */
+        border: black 1px solid;
+				display: flex;
+				width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        margin-top: 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+.row {
+        display: block;
+        float:left;
+				width:50%;
+    }
