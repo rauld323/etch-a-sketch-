@@ -1,14 +1,11 @@
-function makeGrid(){
-	for(let i = 0; i < 16; i++){
-				let row = document.createElement('div')
-				row.className = 'row'
-		for(let j = 0; j < 16; j++){
-					let column = document.createElement('div')
-					row.className = 'column';
-					row.appendChild(column);
-		}
-		document.getElementById('container').appendChild(row);
+const container = document.querySelector("container");
+
+//Clear Screen
+function clearScr (){
+	container.innerHTML = '';
+	let etchSize = prompt("Enter a new grid size no more than 100", 50);
+	if (etchSize < 100){
+		etchSize = 100
 	}
 }
 
-makeGrid();
